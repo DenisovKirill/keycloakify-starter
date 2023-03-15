@@ -1,6 +1,6 @@
 
 .my-color {
-	color: red;
+	color: #09b3da !important;
 }
 
 .my-font {
@@ -8,9 +8,71 @@
 }
 
 .my-root-class {
-	background: white;
+	position: relative;
+	background: linear-gradient(
+			99.45deg,
+			#272727 18.7%,
+			#202020 48.79%,
+			#050505 87.68%
+	);
+	height: 100vh;
 }
 
-.my-root-class body {
-	background: url(./assets/background.svg) no-repeat center center fixed;
+/*.my-root-class body {*/
+/*	!*background: url(./assets/background.svg) no-repeat center center fixed;*!*/
+/*	!*background: #3036ad;;*!*/
+/*	position: relative;*/
+/*	!*background: #3036ad;*!*/
+/*	background: linear-gradient(*/
+/*			99.45deg,*/
+/*			#272727 18.7%,*/
+/*			#202020 48.79%,*/
+/*			#050505 87.68%*/
+/*	);*/
+/*	!*height: 100vh;*!*/
+/*}*/
+
+.kcPageWrapperClass {
+	padding: 0;
+	position: relative;
+	background: linear-gradient(
+			99.45deg,
+			#272727 18.7%,
+			#202020 48.79%,
+			#050505 87.68%
+	);
+	height: 100vh;
 }
+
+.kcModalWrapperClass {
+	width: 320px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: transparent;
+}
+
+.kcFormHeaderClass {
+	text-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+/*.kcSignUpClass {*/
+/*	padding-bottom: 0 !important;*/
+/*	margin-bottom: 0 !important;*/
+/*}*/

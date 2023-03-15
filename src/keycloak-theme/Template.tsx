@@ -10,6 +10,7 @@ import type { TemplateProps } from "keycloakify/lib/KcProps";
 import { usePrepareTemplate } from "keycloakify/lib/Template";
 import type { KcContext } from "./kcContext";
 import type { I18n } from "./i18n";
+import AnimatedEllipse from "../components/animatedEllipse/AnimatedEllipse";
 
 export default function Template(props: TemplateProps<KcContext, I18n>) {
     const {
@@ -55,12 +56,12 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                     {msg("loginTitleHtml", realm.displayNameHtml)}
                 </div>
             </div>
-
-            <div className={clsx(props.kcFormCardClass, displayWide && props.kcFormCardAccountClass)}>
+            <div className={clsx(props.kcFormCardClass, displayWide && props.kcFormCardAccountClass) + " kcModalWrapperClass"}>
                 <header className={clsx(props.kcFormHeaderClass)}>
                     {realm.internationalizationEnabled && (assert(locale !== undefined), true) && locale.supported.length > 1 && (
                         <div id="kc-locale">
                             <div id="kc-locale-wrapper" className={clsx(props.kcLocaleWrapperClass)}>
+                                {/*<AnimatedEllipse />*/}
                                 <div className="kc-dropdown" id="kc-locale-dropdown">
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a href="#" id="kc-current-locale-link">

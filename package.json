@@ -10,7 +10,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "build-keycloak-theme": "yarn build && keycloakify",
+        "build-keycloak-theme": "react-scripts build && keycloakify",
         "download-builtin-keycloak-theme": "download-builtin-keycloak-theme 15.0.2"
     },
     "keycloakify": {
@@ -23,6 +23,7 @@
     "license": "MIT",
     "keywords": [],
     "dependencies": {
+        "@emotion/react": "^11.10.6",
         "evt": "^2.4.15",
         "jwt-decode": "^3.1.2",
         "keycloak-js": "^21.0.1",
@@ -30,6 +31,8 @@
         "powerhooks": "^0.26.2",
         "react": "18.1.0",
         "react-dom": "18.1.0",
+        "react-spring": "^9.7.1",
+        "serve": "^14.2.0",
         "tsafe": "^1.4.3"
     },
     "devDependencies": {

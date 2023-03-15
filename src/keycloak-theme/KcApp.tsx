@@ -25,9 +25,14 @@ const kcProps: KcProps = {
     ...defaultKcProps,
     // NOTE: The classes are defined in ./KcApp.css
     // You can add your classes alongside thoses that are present in the default Keycloak theme...
-    "kcHtmlClass": [...defaultKcProps.kcHtmlClass, "my-root-class"],
-    // ...or overwrite  
-    "kcHeaderWrapperClass": "my-color my-font"
+
+    // "kcHtmlClass": [...defaultKcProps.kcHtmlClass, "my-root-class"],
+    kcHtmlClass: undefined,
+    kcLoginClass: [...defaultKcProps.kcLoginClass,"kcPageWrapperClass"],
+
+    // ...or overwrite
+    kcHeaderWrapperClass: "my-color my-font",
+    kcSignUpClass: [...defaultKcProps.kcSignUpClass, "kcSignUpClass"]
 };
 
 export default function App(props: { kcContext: KcContext; }) {

@@ -28,11 +28,15 @@ const kcProps: KcProps = {
 
     // "kcHtmlClass": [...defaultKcProps.kcHtmlClass, "my-root-class"],
     kcHtmlClass: undefined,
-    kcLoginClass: [...defaultKcProps.kcLoginClass,"kcPageWrapperClass"],
+    kcLoginClass: [...defaultKcProps.kcLoginClass, "kcPageWrapperClass"],
 
     // ...or overwrite
-    kcHeaderWrapperClass: "my-color my-font",
-    kcSignUpClass: [...defaultKcProps.kcSignUpClass, "kcSignUpClass"]
+    kcHeaderWrapperClass: "kcHeaderWrapperClass",
+    kcHeaderClass: [...defaultKcProps.kcHeaderClass, "kcHeaderClass"],
+    kcFormCardClass: [...defaultKcProps.kcFormCardClass, "kcModalWrapperClass"],
+    kcSignUpClass: [...defaultKcProps.kcSignUpClass, "kcSignUpClass"],
+    kcInputClass: [...defaultKcProps.kcInputClass, "kcInputClass"],
+    kcButtonClass: [...defaultKcProps.kcButtonClass, "kcButtonClass"]
 };
 
 export default function App(props: { kcContext: KcContext; }) {

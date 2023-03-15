@@ -1,40 +1,6 @@
-
-.my-color {
-	color: #09b3da !important;
-}
-
-.my-font {
-	font-family: 'Work Sans';
-}
-
-.my-root-class {
-	position: relative;
-	background: linear-gradient(
-			99.45deg,
-			#272727 18.7%,
-			#202020 48.79%,
-			#050505 87.68%
-	);
-	height: 100vh;
-}
-
-/*.my-root-class body {*/
-/*	!*background: url(./assets/background.svg) no-repeat center center fixed;*!*/
-/*	!*background: #3036ad;;*!*/
-/*	position: relative;*/
-/*	!*background: #3036ad;*!*/
-/*	background: linear-gradient(*/
-/*			99.45deg,*/
-/*			#272727 18.7%,*/
-/*			#202020 48.79%,*/
-/*			#050505 87.68%*/
-/*	);*/
-/*	!*height: 100vh;*!*/
-/*}*/
-
 .kcPageWrapperClass {
 	padding: 0;
-	position: relative;
+	color: #ced4da;
 	background: linear-gradient(
 			99.45deg,
 			#272727 18.7%,
@@ -42,6 +8,17 @@
 			#050505 87.68%
 	);
 	height: 100vh;
+}
+
+.kcHeaderWrapperClass {
+	color: #09b3da;
+}
+
+.kcHeaderClass {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
 }
 
 .kcModalWrapperClass {
@@ -72,7 +49,28 @@
 	justify-content: center;
 }
 
-/*.kcSignUpClass {*/
-/*	padding-bottom: 0 !important;*/
-/*	margin-bottom: 0 !important;*/
-/*}*/
+.kcSignUpClass {
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.kcInputClass {
+	background: transparent;
+	border: none;
+	border-bottom: #00a1d9 1px solid;
+}
+
+.kcButtonClass {
+	/*background-color: #1976d2;*/
+	width: 310px;
+	display: block;
+	background: #0085ff;
+	border-radius: 50px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.2px;
+	text-transform: none;
+	padding: 10px 0;
+	margin: 20px auto 0;
+}

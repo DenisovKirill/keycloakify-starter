@@ -51,17 +51,17 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
 
     return (
         <div className={clsx(props.kcLoginClass)}>
+            <AnimatedEllipse />
             <div id="kc-header" className={clsx(props.kcHeaderClass)}>
                 <div id="kc-header-wrapper" className={clsx(props.kcHeaderWrapperClass)}>
                     {msg("loginTitleHtml", realm.displayNameHtml)}
                 </div>
             </div>
-            <div className={clsx(props.kcFormCardClass, displayWide && props.kcFormCardAccountClass) + " kcModalWrapperClass"}>
+            <div className={clsx(props.kcFormCardClass, displayWide && props.kcFormCardAccountClass)}>
                 <header className={clsx(props.kcFormHeaderClass)}>
                     {realm.internationalizationEnabled && (assert(locale !== undefined), true) && locale.supported.length > 1 && (
                         <div id="kc-locale">
                             <div id="kc-locale-wrapper" className={clsx(props.kcLocaleWrapperClass)}>
-                                {/*<AnimatedEllipse />*/}
                                 <div className="kc-dropdown" id="kc-locale-dropdown">
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a href="#" id="kc-current-locale-link">

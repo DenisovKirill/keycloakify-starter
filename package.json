@@ -24,7 +24,11 @@
     "keywords": [],
     "dependencies": {
         "@emotion/react": "^11.10.6",
+        "@emotion/styled": "^11.10.6",
+        "@mui/icons-material": "^5.11.11",
+        "@mui/material": "^5.11.13",
         "evt": "^2.4.15",
+        "formik": "2.2.9",
         "jwt-decode": "^3.1.2",
         "keycloak-js": "^21.0.1",
         "keycloakify": "^6.12.7",
@@ -33,7 +37,8 @@
         "react-dom": "18.1.0",
         "react-spring": "^9.7.1",
         "serve": "^14.2.0",
-        "tsafe": "^1.4.3"
+        "tsafe": "^1.4.3",
+        "yup": "^1.0.2"
     },
     "devDependencies": {
         "@types/node": "^15.3.1",

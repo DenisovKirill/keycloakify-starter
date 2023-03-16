@@ -52,90 +52,90 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
     return (
         <div className={clsx(props.kcLoginClass)}>
             <AnimatedEllipse />
-            <div id="kc-header" className={clsx(props.kcHeaderClass)}>
-                <div id="kc-header-wrapper" className={clsx(props.kcHeaderWrapperClass)}>
-                    {msg("loginTitleHtml", realm.displayNameHtml)}
-                </div>
-            </div>
+            {/*<div id="kc-header" className={clsx(props.kcHeaderClass)}>*/}
+            {/*    <div id="kc-header-wrapper" className={clsx(props.kcHeaderWrapperClass)}>*/}
+            {/*        {msg("loginTitleHtml", realm.displayNameHtml)}*/}
+            {/*    </div>*/}
+            {/*</div>*/}
             <div className={clsx(props.kcFormCardClass, displayWide && props.kcFormCardAccountClass)}>
-                <header className={clsx(props.kcFormHeaderClass)}>
-                    {realm.internationalizationEnabled && (assert(locale !== undefined), true) && locale.supported.length > 1 && (
-                        <div id="kc-locale">
-                            <div id="kc-locale-wrapper" className={clsx(props.kcLocaleWrapperClass)}>
-                                <div className="kc-dropdown" id="kc-locale-dropdown">
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a href="#" id="kc-current-locale-link">
-                                        {labelBySupportedLanguageTag[currentLanguageTag]}
-                                    </a>
-                                    <ul>
-                                        {locale.supported.map(({ languageTag }) => (
-                                            <li key={languageTag} className="kc-dropdown-item">
-                                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                                <a href="#" onClick={() => changeLocale(languageTag)}>
-                                                    {labelBySupportedLanguageTag[languageTag]}
-                                                </a>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                    {!(auth !== undefined && auth.showUsername && !auth.showResetCredentials) ? (
-                        displayRequiredFields ? (
-                            <div className={clsx(props.kcContentWrapperClass)}>
-                                <div className={clsx(props.kcLabelWrapperClass, "subtitle")}>
-                                    <span className="subtitle">
-                                        <span className="required">*</span>
-                                        {msg("requiredFields")}
-                                    </span>
-                                </div>
-                                <div className="col-md-10">
-                                    <h1 id="kc-page-title">{headerNode}</h1>
-                                </div>
-                            </div>
-                        ) : (
-                            <h1 id="kc-page-title">{headerNode}</h1>
-                        )
-                    ) : displayRequiredFields ? (
-                        <div className={clsx(props.kcContentWrapperClass)}>
-                            <div className={clsx(props.kcLabelWrapperClass, "subtitle")}>
-                                <span className="subtitle">
-                                    <span className="required">*</span> {msg("requiredFields")}
-                                </span>
-                            </div>
-                            <div className="col-md-10">
-                                {showUsernameNode}
-                                <div className={clsx(props.kcFormGroupClass)}>
-                                    <div id="kc-username">
-                                        <label id="kc-attempted-username">{auth?.attemptedUsername}</label>
-                                        <a id="reset-login" href={url.loginRestartFlowUrl}>
-                                            <div className="kc-login-tooltip">
-                                                <i className={clsx(props.kcResetFlowIcon)}></i>
-                                                <span className="kc-tooltip-text">{msg("restartLoginTooltip")}</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ) : (
-                        <>
-                            {showUsernameNode}
-                            <div className={clsx(props.kcFormGroupClass)}>
-                                <div id="kc-username">
-                                    <label id="kc-attempted-username">{auth?.attemptedUsername}</label>
-                                    <a id="reset-login" href={url.loginRestartFlowUrl}>
-                                        <div className="kc-login-tooltip">
-                                            <i className={clsx(props.kcResetFlowIcon)}></i>
-                                            <span className="kc-tooltip-text">{msg("restartLoginTooltip")}</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </>
-                    )}
-                </header>
+                {/*<header className={clsx(props.kcFormHeaderClass)}>*/}
+                {/*    {realm.internationalizationEnabled && (assert(locale !== undefined), true) && locale.supported.length > 1 && (*/}
+                {/*        <div id="kc-locale">*/}
+                {/*            <div id="kc-locale-wrapper" className={clsx(props.kcLocaleWrapperClass)}>*/}
+                {/*                <div className="kc-dropdown" id="kc-locale-dropdown">*/}
+                {/*                    /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
+                {/*                    <a href="#" id="kc-current-locale-link">*/}
+                {/*                        {labelBySupportedLanguageTag[currentLanguageTag]}*/}
+                {/*                    </a>*/}
+                {/*                    <ul>*/}
+                {/*                        {locale.supported.map(({ languageTag }) => (*/}
+                {/*                            <li key={languageTag} className="kc-dropdown-item">*/}
+                {/*                                /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
+                {/*                                <a href="#" onClick={() => changeLocale(languageTag)}>*/}
+                {/*                                    {labelBySupportedLanguageTag[languageTag]}*/}
+                {/*                                </a>*/}
+                {/*                            </li>*/}
+                {/*                        ))}*/}
+                {/*                    </ul>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    )}*/}
+                {/*    {!(auth !== undefined && auth.showUsername && !auth.showResetCredentials) ? (*/}
+                {/*        displayRequiredFields ? (*/}
+                {/*            <div className={clsx(props.kcContentWrapperClass)}>*/}
+                {/*                <div className={clsx(props.kcLabelWrapperClass, "subtitle")}>*/}
+                {/*                    <span className="subtitle">*/}
+                {/*                        <span className="required">*</span>*/}
+                {/*                        {msg("requiredFields")}*/}
+                {/*                    </span>*/}
+                {/*                </div>*/}
+                {/*                <div className="col-md-10">*/}
+                {/*                    <h1 id="kc-page-title">{headerNode}</h1>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        ) : (*/}
+                {/*            <h1 id="kc-page-title">{headerNode}</h1>*/}
+                {/*        )*/}
+                {/*    ) : displayRequiredFields ? (*/}
+                {/*        <div className={clsx(props.kcContentWrapperClass)}>*/}
+                {/*            <div className={clsx(props.kcLabelWrapperClass, "subtitle")}>*/}
+                {/*                <span className="subtitle">*/}
+                {/*                    <span className="required">*</span> {msg("requiredFields")}*/}
+                {/*                </span>*/}
+                {/*            </div>*/}
+                {/*            <div className="col-md-10">*/}
+                {/*                {showUsernameNode}*/}
+                {/*                <div className={clsx(props.kcFormGroupClass)}>*/}
+                {/*                    <div id="kc-username">*/}
+                {/*                        <label id="kc-attempted-username">{auth?.attemptedUsername}</label>*/}
+                {/*                        <a id="reset-login" href={url.loginRestartFlowUrl}>*/}
+                {/*                            <div className="kc-login-tooltip">*/}
+                {/*                                <i className={clsx(props.kcResetFlowIcon)}></i>*/}
+                {/*                                <span className="kc-tooltip-text">{msg("restartLoginTooltip")}</span>*/}
+                {/*                            </div>*/}
+                {/*                        </a>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    ) : (*/}
+                {/*        <>*/}
+                {/*            {showUsernameNode}*/}
+                {/*            <div className={clsx(props.kcFormGroupClass)}>*/}
+                {/*                <div id="kc-username">*/}
+                {/*                    <label id="kc-attempted-username">{auth?.attemptedUsername}</label>*/}
+                {/*                    <a id="reset-login" href={url.loginRestartFlowUrl}>*/}
+                {/*                        <div className="kc-login-tooltip">*/}
+                {/*                            <i className={clsx(props.kcResetFlowIcon)}></i>*/}
+                {/*                            <span className="kc-tooltip-text">{msg("restartLoginTooltip")}</span>*/}
+                {/*                        </div>*/}
+                {/*                    </a>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        </>*/}
+                {/*    )}*/}
+                {/*</header>*/}
                 <div id="kc-content">
                     <div id="kc-content-wrapper">
                         {/* App-initiated actions should not see warning messages about the need to complete the action during login. */}

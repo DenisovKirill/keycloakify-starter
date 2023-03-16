@@ -36,7 +36,7 @@ const kcProps: KcProps = {
     kcFormCardClass: [...defaultKcProps.kcFormCardClass, "kcModalWrapperClass"],
     kcSignUpClass: [...defaultKcProps.kcSignUpClass, "kcSignUpClass"],
     kcInputClass: [...defaultKcProps.kcInputClass, "kcInputClass"],
-    kcButtonClass: [...defaultKcProps.kcButtonClass, "kcButtonClass"]
+    kcButtonClass: ["kcButtonClass"]
 };
 
 export default function App(props: { kcContext: KcContext; }) {
